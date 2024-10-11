@@ -1,0 +1,81 @@
+body {
+    background-image: url('images/mathBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1a1a2e;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.calculator-icon {
+    background: #1A466D no-repeat center;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.calculate-btn {
+    background: linear-gradient(90deg, #1a68ad, #00f2fe);
+    color: white;
+    width: 100%;
+}
+
+.reset-btn {
+    background: linear-gradient(90deg, #ed6047, #b91405);
+    color: white;
+    width: 100%;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    background-color: #2d2d44;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #b3b3b3;
+}
+
+select {
+    background-color: #2d2d44;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 100%;
+}

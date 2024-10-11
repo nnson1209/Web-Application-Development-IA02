@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Math Calculator</title>
+
+    <!-- Link to use styles, icons and argumentation operations -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="min-h-screen flex items-center justify-center text-white">
+    <div class="container max-w-md mx-auto p-8 rounded-lg shadow-lg">
+        <!-- Logo math calculation -->
+        <div class="text-center mb-6">
+            <i class="fas fa-calculator text-yellow-400 text-6xl icon-glow"></i>
+            <h1 class="text-4xl font-bold text-yellow-300 mt-4">Math Calculator</h1>
+        </div>
+
+        <!-- Calculator form -->
+        <form id="calculator-form" class="space-y-4">
+            <!-- Input number -->
+            <div class="space-y-3">
+                <label for="num1" class="block text-sm text-teal-300">First Number</label>
+                <input id="num1" type="number" class="w-full p-3 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-teal-400 outline-none" placeholder="Enter first number">
+            </div>
+
+            <div class="space-y-3">
+                <label for="num2" class="block text-sm text-teal-300">Second Number</label>
+                <input id="num2" type="number" class="w-full p-3 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-teal-400 outline-none" placeholder="Enter second number">
+            </div>
+
+            <!-- Choose operation -->
+            <div class="space-y-3">
+                <label for="operation" class="block text-sm text-teal-300">Choose Operation</label>
+                <select id="operation" class="w-full p-3 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+                    <option value="">-- Select Operation --</option>
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="divide">Divide</option>
+                </select>
+            </div>
+
+            <!-- Calculate or Reset -->
+            <div class="flex justify-between space-x-4">
+                <button type="button" id="calculate-btn" class="calculate-btn p-2 flex-1">
+                    <i class="fas fa-equals mr-2"></i> Calculate
+                </button>
+                <button type="button" id="reset-btn" class="reset-btn p-2 flex-1">
+                    <i class="fas fa-sync-alt mr-2"></i> Reset
+                </button>
+            </div>
+        </form>
+
+        <!-- Result -->
+        <div id="result-area" class="mt-6 text-center text-xl font-bold">
+            <p id="result" class="text-yellow-300"></p>
+            <p id="error" class="text-orange-400"></p>
+        </div>
+    </div>
+</body>
+
+</html>
